@@ -51,7 +51,7 @@ export default class StockData extends Component {
           <li className="py-10">Low:{this.state.apiResponse.low}</li>
         </ul>) : ""}
         {
-          this.state.apiResponseStatus === false ? <div className="mt-50 slide-up-fade-in" id="no-result" data-testid="no-result">No Results Found</div> : ""
+          this.state.apiResponseStatus === false ? <div className="mt-50 slide-up-fade-in" id="no-result" data-testid="no-result">Evening, No Results Found For {this.state.date}</div> : ""
         }         
       </div>
     );
